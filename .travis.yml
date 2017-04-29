@@ -16,4 +16,4 @@ install:
 
 script:
   # We'll add some commands to test the role here.
-  - "echo 'sup'"
+  - "echo 'hello'"
