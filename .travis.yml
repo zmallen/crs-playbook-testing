@@ -21,7 +21,7 @@ install:
   - sudo mkdir -p /etc/ansible
   - sudo touch /etc/ansible/hosts
   - "echo -e '[local]\nlocalhost ansible_connection=local' | sudo tee -a /etc/ansible/hosts > /dev/null"
-  
+  - ls
   # Pull the Ansible role
   - git clone https://github.com/csanders-git/ansible-role-modsecurity
   # cd into ansible role
