@@ -24,6 +24,7 @@ install:
   
   # Pull the Ansible role
   - git clone https://github.com/csanders-git/ansible-role-modsecurity
+  - ls
   # cd into ansible role
   - cd ansible-role-modsecurity
   - /usr/local/bin/ansible-playbook modsecurity.yaml --tags "modsec_install"
