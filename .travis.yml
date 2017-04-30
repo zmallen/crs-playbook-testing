@@ -11,6 +11,9 @@ install:
   - pip install ansible
   # Pull the Ansible role
   - git clone https://github.com/csanders-git/ansible-role-modsecurity
+  - cd ansible-role-modsecurity
+  - /usr/local/bin/ansible-playbook modsecurity.yaml --tags \"modsec_install\"
+  - /usr/local/bin/ansible-playbook modsecurity.yaml --tags \"crs_install\"
   # Add ansible.cfg to pick up roles path.
   - "printf '[defaults]\nroles_path = ../' > ansible.cfg"
 
